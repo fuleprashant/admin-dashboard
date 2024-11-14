@@ -140,13 +140,13 @@ const Sidebar = () => {
   return (
     <div
       className={`transition-all duration-300 ${
-        isSidebarOpen ? "w-[260px]" : "w-[80px]"
+        isSidebarOpen ? "w-[240px]" : "w-[80px]"
       }`}
     >
       {/* Sidebar toggle button */}
       <div className="mt-5 ml-3">
         <button onClick={handleSidebar}>
-          <IoReorderThree size={40} />
+          <IoReorderThree size={40} className="text-white" />
         </button>
       </div>
 
@@ -159,7 +159,9 @@ const Sidebar = () => {
             className="flex items-center space-x-4 p-3  hover:translate-x-3  cursor-pointer"
           >
             <item.icon style={{ color: item.color }} size={24} />
-            {isSidebarOpen && <span>{item.name}</span>}
+            {isSidebarOpen && (
+              <span className="text-white font-bold">{item.name}</span>
+            )}
           </NavLink>
         ))}
       </div>

@@ -7,12 +7,12 @@ const FirstLayout = () => {
   return (
     <div>
       <div className="flex flex-row h-screen ">
-        <header className=" ">
+        <header className="border-r-2 border-black shadow-sm">
           <div>
             <Sidebar />
           </div>
         </header>
-        <hr className="text-blck shadow-md" />
+        <br className="text-black shadow-md" />
         <div className="flex flex-col w-full">
           <div className="h-16 ">
             <Navbar />
