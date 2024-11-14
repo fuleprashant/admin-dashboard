@@ -140,7 +140,7 @@ const Sidebar = () => {
   return (
     <div
       className={`transition-all duration-300 ${
-        isSidebarOpen ? "w-[240px]" : "w-[80px]"
+        isSidebarOpen ? "w-[260px]" : "w-[80px]"
       }`}
     >
       {/* Sidebar toggle button */}
@@ -151,12 +151,12 @@ const Sidebar = () => {
       </div>
 
       {/* Sidebar content */}
-      <div className="mt-12 ml-3 ">
+      <div className="mt-12 ml-3 mr-3">
         {SIDEBAR_ITEMS.map((item) => (
           <NavLink
             to={item.path}
             key={item.name}
-            className="flex items-center space-x-4 p-3  hover:translate-x-3  cursor-pointer"
+            className="flex items-center space-x-4 p-4  hover:translate-x-3  cursor-pointer hover:bg-slate-500 rounded-lg "
           >
             <item.icon style={{ color: item.color }} size={24} />
             {isSidebarOpen && (

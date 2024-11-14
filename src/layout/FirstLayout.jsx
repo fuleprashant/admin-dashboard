@@ -14,9 +14,10 @@ const FirstLayout = () => {
         </header>
         <br className="text-black shadow-md" />
         <div className="flex flex-col w-full">
-          <div className="h-16 ">
+          <div className="h-16 flex justify-center items-center">
             <Navbar />
           </div>
+          <hr className="border-r-2 border-black shadow-sm" />
           <main className=" h-full">
             <div>{<Outlet />}</div>
           </main>

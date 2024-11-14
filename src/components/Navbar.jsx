@@ -1,7 +1,7 @@
 import React from "react";
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return <div className="text-white">this is the Navbar component</div>;
 };
 
 export default Navbar;
