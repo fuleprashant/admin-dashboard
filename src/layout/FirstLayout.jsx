@@ -7,16 +7,17 @@ const FirstLayout = () => {
   return (
     <div>
       <div className="flex flex-row h-screen ">
-        <header className="w-[260px] bg-red-800">
+        <header className=" ">
           <div>
             <Sidebar />
           </div>
         </header>
+        <hr className="text-blck shadow-md" />
         <div className="flex flex-col w-full">
-          <div className="h-16 bg-purple-500">
+          <div className="h-16 ">
             <Navbar />
           </div>
-          <main className="bg-blue-900 h-full">
+          <main className=" h-full">
             <div>{<Outlet />}</div>
           </main>
         </div>
